@@ -1,0 +1,11 @@
+.carousel-cell {
+  width: 50%;
+  min-height: 250px;
+  height: 50%;
+  margin-right: 10px;
+  background-size: cover;
+  .container{
+    max-width: 1200px;
+    text-align: center;
+  }
+}
