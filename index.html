@@ -1,20 +1,34 @@
 <!Doctype html>
 <html>
 <head>
+    <title>Flickity Carousel</title>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/normalize.css">
     <link rel="stylesheet" href="vendor/css/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="main-carousel">
-    <div class="carousel-cell" id="carousel-cell1" style="background-image: url('images/Chrysanthemum.jpg')"><div class="container">AAAA</div></div>
-    <div class="carousel-cell" id="carousel-cell2" style="background-image: url('images/Desert.jpg')"><div class="container">BBBB</div></div>
-    <div class="carousel-cell" id="carousel-cell3" style="background-image: url('images/Hydrangeas.jpg')"><div class="container">CCCCC</div></div>
-    <div class="carousel-cell" id="carousel-cell4" style="background-image: url('images/Jellyfish.jpg')"><div class="container">DDDDD</div></div>
-    <div class="carousel-cell" id="carousel-cell5" style="background-image: url('images/Koala.jpg')"><div class="container">EEEEEE</div></div>
+    <div class="carousel-cell" id="carousel-cell1" style="background-image: url('images/Chrysanthemum.jpg')">
+        <div class="container">A colorful Chrysanthemum</div>
+    </div>
+    <div class="carousel-cell" id="carousel-cell2" style="background-image: url('images/Desert.jpg')">
+        <div class="container">Beautiful desert view</div>
+    </div>
+    <div class="carousel-cell" id="carousel-cell3" style="background-image: url('images/Hydrangeas.jpg')">
+        <div class="container">Marvelous Hydrangeas</div>
+    </div>
+    <div class="carousel-cell" id="carousel-cell4" style="background-image: url('images/Jellyfish.jpg')">
+        <div class="container">Gorgeous Jellyfish</div>
+    </div>
+    <div class="carousel-cell" id="carousel-cell5" style="background-image: url('images/Koala.jpg')">
+        <div class="container">Cute Koala</div>
+    </div>
 </div>
+<div class="progress-bar"></div>
+<button id="reset-btn">Reset</button>
 
 <script src="vendor/js/flickity.pkgd.min.js"></script>
 <script src="vendor/js/hash.js"></script>

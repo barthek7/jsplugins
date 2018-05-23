@@ -1,11 +1,30 @@
-.carousel-cell {
-  width: 50%;
-  min-height: 250px;
-  height: 50%;
-  margin-right: 10px;
-  background-size: cover;
-}
-.carousel-cell .container {
-  max-width: 1200px;
-  text-align: center;
-}
+* {
+  box-sizing: border-box; }
+
+.main-carousel {
+  width: 100%; }
+  .main-carousel .carousel-cell {
+    min-height: 250px;
+    height: 50%;
+    width: 50%;
+    margin-right: 10px;
+    background-size: cover;
+    border-radius: 10px; }
+    .main-carousel .carousel-cell .container {
+      max-width: 1200px;
+      text-align: center;
+      color: mintcream;
+      font-size: 20px;
+      font-family: Damion; }
+
+#reset-btn {
+  position: absolute;
+  left: 70%;
+  top: 24%;
+  z-index: 20; }
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333; }
+/*# sourceMappingURL=style.css.map */
