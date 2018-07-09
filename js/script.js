@@ -1,3 +1,16 @@
+
+var loadSlides = function(someList){
+    var templateCarousel = document.getElementById('carousel-template').innerHTML;
+    Mustache.parse(templateCarousel);
+    var carousel = document.querySelector('.main-carousel');
+    for (el of someList){
+       var generated = Mustache.render(templateCarousel, el);
+       carousel.insertAdjacentHTML('beforeend', generated);
+    }
+};
+loadSlides(list);
+
+
 var flkty = new Flickity('.main-carousel', {
    pageDots: false,
    hash: true
