@@ -15,37 +15,58 @@
 </div>
 <div class="progress-bar"></div>
 <button id="reset-btn">Reset</button>
+<div id="map"></div>
 <script>
     var list = [
         {
             id: 1,
             image: 'images/Chrysanthemum.jpg',
             title:'Chrysanthemum',
-            description:'A colorful Chrysanthemum'
+            description:'A colorful Chrysanthemum',
+            coords: {
+                lat: 40.7127753,
+                lng: -74.0059728
+            }
         },
         {
             id:2,
             image: 'images/Desert.jpg',
             title:'Desert',
-            description:'Beautiful desert view'
+            description:'Beautiful desert view',
+            coords: {
+                lat: 55.755826,
+                lng: 37.617299900000035
+            }
         },
         {
             id: 3,
             image: 'images/Hydrangeas.jpg',
             title:'Hydrandgeas',
-            description:'Marvelous Hydrangeas'
+            description:'Marvelous Hydrangeas',
+            coords: {
+                lat: 52.2296756,
+                lng: 21.012228700000037
+            }
         },
         {
             id: 4,
             image: 'images/Jellyfish.jpg',
             title:'Jellyfish',
-            description:'Gorgeous Jellyfish'
+            description:'Gorgeous Jellyfish',
+            coords: {
+                lat: -22.9068467,
+                lng: -43.17289649999998
+            }
         },
         {
             id: 5,
             image: 'images/Koala.jpg',
             title:'Koala',
-            description:'Sweet Koala'
+            description:'Sweet Koala',
+            coords: {
+                lat: -33.8688197,
+                lng: 151.20929550000005
+            }
         }
     ]
 </script>
@@ -61,5 +82,8 @@
 <script src="vendor/js/hash.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 <script src="js/script.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMmtmvkrgQ88xA1F7ylxxwrZji78JD-g&callback=initMap">
+</script>
 </body>
 </html>
