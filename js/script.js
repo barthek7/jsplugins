@@ -38,7 +38,7 @@ function initMap(){
     for(var i = 0; i<list.length; i++){
        arrMarkers.push(new google.maps.Marker({position: list[i].coords, map: map}));
     }
-    for(var marker in arrMarkers){
+    for(marker in arrMarkers){
         (function (z){
             google.maps.event.addListener(arrMarkers[marker], 'click', function(){
                 flkty.select(z);
